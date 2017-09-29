@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <form (submit)="onRegisterSubmit()">
+          <div class="form-group">
+            <h2>Create account</h2>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="signupName">Name</label>
+            <input id="signupName" type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" name="name" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group">
+              <label class="control-label" for="signupUsername">Username</label>
+              <input id="signupUsername" type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" maxlength="50" class="form-control">
+            </div>
+          <div class="form-group">
+            <label class="control-label" for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="signupPassword">Password</label>
+            <input id="signupPassword" type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" maxlength="25" class="form-control" placeholder="at least 6 characters" length="40">
+          </div>
+          <div class="form-group">
+            <button id="signupSubmit" type="submit" class="btn btn-dark btn-block">Create your account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
